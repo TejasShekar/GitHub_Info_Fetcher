@@ -22,7 +22,9 @@ function getInfo() {
           for (let i = 0; i < data.length; i++) {
             let reposURL = data[i].homepage;
             let reposName = data[i].name;
-            output.innerHTML += `<li><a href="${reposURL}" target="_blank">${reposName}</a></li></ol>`;
+            if (reposURL && reposName !== "") {
+              output.innerHTML += `<li><a href="${reposURL}" target="_blank">${reposName}</a></li></ol>`;
+            }
           }
         });
     });
