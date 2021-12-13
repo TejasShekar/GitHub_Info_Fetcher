@@ -20,7 +20,7 @@ function getInfo() {
         .then((data) => {
           repoHeading.style.display = "block";
           for (let i = 0; i < data.length; i++) {
-            let reposURL = data[i].html_url;
+            let reposURL = data[i].homepage;
             let reposName = data[i].name;
             output.innerHTML += `<li><a href="${reposURL}" target="_blank">${reposName}</a></li></ol>`;
           }
