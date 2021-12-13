@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: greenyellow;
+  font-family: "Gloria Hallelujah", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+#text {
+  text-align: center;
+  margin: 1rem auto;
+}
+#username {
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#notice {
+    margin: 1rem;
+  font-size: small;
+  color: grey;
+  text-align: center;
+}
+
+#check-btn {
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+}
+
+#avatar {
+  display: block;
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 50%;
+  border: 3px solid greenyellow;
+}
+#repo-heading {
+  margin: auto 5rem;
+  text-align: center;
+  font-size: large;
+  color: white;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  font-size: large;
+}
+
+#output {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+@media only screen and (min-width: 1281px) {
+  #avatar {
+    display: block;
+    margin: 2rem auto;
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid greenyellow;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px),
+  (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #avatar {
+    display: block;
+    margin: 2rem auto;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid greenyellow;
+  }
+}
